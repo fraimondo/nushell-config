@@ -6,6 +6,7 @@ source ~/.oh-my-posh.nu
 let paths_to_add = [
     "/usr/local/bin",
     "/opt/homebrew/bin/",
+    $"($env.HOME)/miniforge3/condabin",
     $"($env.HOME)/.local/bin"
 ]
 
