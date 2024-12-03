@@ -24,6 +24,3 @@ def glog [] {
     | upsert date {|d| $d.date | into datetime}
   )
 }
-
-
-
