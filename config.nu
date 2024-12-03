@@ -24,3 +24,10 @@ def glog [] {
     | upsert date {|d| $d.date | into datetime}
   )
 }
+
+
+def doubleexit [] { ^ps -p $nu.pid -o ppid= | xargs -n 1 kill -9 }
+
+alias qnu = exit
+alias quit = doubleexit
+
